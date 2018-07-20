@@ -18,10 +18,11 @@ class BinarySearchTree:
     while len(queue) > 0:
       current = queue.pop(0)
       cb(current.value)
-      if self.left:
-        self.left = queue.pop(self.left)
-      if self.right:
-        self.right = queue.pop(self.right)
+      if current.left:
+        queue.append(current.left)
+      if current.right:
+        queue.append(current.right)
+      
 
   def insert(self, value):
     new_tree = BinarySearchTree(value)
