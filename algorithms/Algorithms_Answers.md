@@ -2,7 +2,7 @@ Add your answers to the Algorithms exercises here(CS11).
 
 (a) O(n^3 / n^2) = O(n) Linear Time
 
-(b) all four lines at O(n) while last line at O(1)
+(b) all first three "for" loops lines at O(n) while last "for loop" line at O(1)
 O(n^3)
 
 (c) recursive function.  O(n) Linear time
