@@ -1,5 +1,18 @@
+Add your answers to the Algorithms exercises here(CS11).
 
-Add your answers to the Algorithms exercises here.
+(a) O(n^3 / n^2) = O(n) Linear Time
+
+(b) all four lines at O(n) while last line at O(1)
+O(n^3)
+
+(c) recursive function.  O(n) Linear time
+
+Exercise II:
+
+
+
+
+Add your answers to the Algorithms exercises here (cs10).
 
 Exercise I
 
@@ -11,7 +24,7 @@ c)O(n)
 
 d)O(n log n)
 
-e)O(n^4)
+e)O(c)
 
 f)O(n)
 
