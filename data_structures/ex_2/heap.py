@@ -6,7 +6,7 @@ def heapsort(arr):
   for item in arr:
     heap.insert(item)
 #sorting Heap with structure declared below starting with first element at(0) index.  
-# .delete() to move element from root position to get to our max element until heap is max.
+# .delete() to move element from top root position to get to our max element until heap is max.
   while heap.size > 0:
     sort_list.insert(0, heap.delete())
 
