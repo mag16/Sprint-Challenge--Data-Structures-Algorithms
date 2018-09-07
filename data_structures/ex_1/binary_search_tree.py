@@ -24,7 +24,7 @@ class BinarySearchTree:
 # first checking that there is a left node and add if so add node.
       if current.left:
         queue.append(current.left)
-#then check that there is a node on the right and add if so add node.
+#then check that there is a node on the right and add node.
       if current.right:
         queue.append(current.right)
       
