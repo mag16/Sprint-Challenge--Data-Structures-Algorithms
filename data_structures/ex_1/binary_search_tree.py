@@ -4,6 +4,8 @@ class BinarySearchTree:
     self.left = None
     self.right = None
 
+#recursive.  going down the left side of the tree first checking for child nodes.  
+# traverse and cb up then check the right side for child nodes.
   def depth_first_for_each(self, cb):
     cb(self.value)
     if self.left:
@@ -12,14 +14,17 @@ class BinarySearchTree:
       self.right.depth_first_for_each(cb)
     return
     
-
+# iterate w a queue.  breadth first ordering at each level of the tree from left to right.
   def breadth_first_for_each(self, cb):
     queue = [self]
     while len(queue) > 0:
+      #remove node at first index
       current = queue.pop(0)
       cb(current.value)
+# first checking that there is a left node and add if so add node.
       if current.left:
         queue.append(current.left)
+#then check that there is a node on the right and add if so add node.
       if current.right:
         queue.append(current.right)
       
